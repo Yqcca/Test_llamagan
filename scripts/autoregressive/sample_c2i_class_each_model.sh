@@ -1,7 +1,7 @@
 #!/bin/bash
 set -x
 
-MODEL_DIR="/home/dongxiao/LlamaGen/saved_model_cub200_single_gpu/20241212140105-GPT-B"
+MODEL_DIR="/home/xiandong/LlamaGen/saved_model_cub200_single_gpu/result-GPT-B"
 
 # 遍历MODEL_DIR下的所有子目录
 for checkpoint_dir in "$MODEL_DIR"/*/ ; do

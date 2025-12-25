@@ -24,12 +24,10 @@ bash scripts/autoregressive/train_c2i_fsdp.sh \
 --num_classes 200 \
 --epochs 300
 
-# bash ./scripts/autoregressive/extract_codes_c2i.sh --vq-ckpt ./pretrained_models/vae/vq_ds16_c2i.pt --data-path /home/dongxiao/Datasets/cub200/train --code-path /home/dongxiao/LlamaGen/cub200_code_c2i_flip_ten_crop --ten-crop --crop-range 1.1 --image-size 384
-
 # Modify the model path in sample_c2i_class_each_model.sh according to cloud_save_path
-# bash scripts/autoregressive/sample_c2i_class_each_model.sh 
-# bash scripts/tokenizer/train_vq.sh --cloud-save-path /home/dongxiao/LlamaGen/saved_model --data-path /home/dongxiao/Datasets/cifar10/images --image-size 256 --vq-model VQ-16
+bash scripts/autoregressive/sample_c2i_class_each_model.sh
 
+# bash scripts/tokenizer/train_vq.sh --cloud-save-path /home/dongxiao/LlamaGen/saved_model --data-path /home/dongxiao/Datasets/cifar10/images --image-size 256 --vq-model VQ-16
 # bash ./scripts/autoregressive/extract_codes_c2i.sh --vq-ckpt ./pretrained_models/vae/vq_ds16_c2i.pt --data-path /home/dongxiao/Datasets/cifar10/images --code-path /home/dongxiao/LlamaGen/cifar10_code_c2i_flip_ten_crop --ten-crop --crop-range 1.1 --image-size 384
 
 
